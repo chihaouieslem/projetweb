@@ -1,0 +1,41 @@
+<div class="form-style-5">
+    <form>
+    <fieldset>
+    <legend style="color: #6495ED !important;"><span class="number" ></span> Ajouter les coordonnées des participants </legend><br> <br>
+    
+    
+    <label for="job" >Identifiant : </label>
+    
+    <input type="text" [(ngModel)]="newparticipant.id" name="field1" placeholder="Identifiant*" >
+    <label for="job" >Nom et Prénom : </label>
+    
+    <input type="text" [(ngModel)]="newparticipant.nomprenom" name="field3" placeholder="Nom et Prénom *" >
+    <label for="job"> Email : </label>
+    
+    <input type="email"  [(ngModel)]="newparticipant.email"name="field2" placeholder=" Email *">
+    <label for="job"> Adresse :  </label>
+    
+    <input type="text" [(ngModel)]="newparticipant.adresse" name="field6" placeholder="Adresse  *">
+    
+    
+    <label for="job"   >Poste Et Société :</label>
+    <input type="text" [(ngModel)]="newparticipant.poste" name="field7" placeholder="Poste Et Société *">
+   <!-- <select id="job" name="field4">
+    <optgroup >
+      <option >Etudiant</option>
+      <option >Directeur</option>
+      <option> Employe</option>
+      <option >Ingénieur</option>
+      <option >Compable</option>
+      <option >secretaire</option>
+      <option >Other</option>
+    </optgroup>
+    
+    </select>   -->   
+    </fieldset>
+    <fieldset></fieldset>
+    
+  <input type="submit"  (click)="addparticipant()" value="Ajouter" />
+ 
+    </form>
+    </div>

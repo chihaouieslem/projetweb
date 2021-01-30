@@ -1,0 +1,39 @@
+<div class="form-style-5">
+    <form>
+    <fieldset>
+    <legend style="color: #6495ED !important;"><span class="number" ></span>Modifier les coordonnées des formateurs </legend><br> <br>
+   
+    <label for="job" >Identifiant : </label>
+    
+    <input type="text" [(ngModel)]="currentformateur.id" name="field3"  >
+    <label for="job" >Nom et Prénom : </label>
+    
+    <input type="text" [(ngModel)]="currentformateur.nomprenom" name="field1"  >
+    <label for="job"> Email : </label>
+    
+    <input type="email"  [(ngModel)]="currentformateur.email"name="field2" placeholder=" Email *">
+    <label for="job">Adresse :  </label>
+    
+    <input type="text" [(ngModel)]="currentformateur.adresse" name="field6" placeholder="Adresse  *">
+    
+    <label for="job" >Domaine d'Expertise:</label>
+    <input type="text" [(ngModel)]="currentformateur.domaine" name="field7" placeholder="domaine *">
+    <!--<select id="job" name="field4" [(ngModel)]="currentformateur.domaine">
+    <optgroup >
+      <option >React</option>
+      <option value="reading">Angular</option>
+      <option value="boxing">NodeJs</option>
+      <option value="debate">Java</option>
+      <option value="gaming">JavaScript</option>
+      <option value="snooker">Mean Stack</option>
+      <option value="other_indoor">Other</option>
+    </optgroup>
+    
+    </select>  -->    
+    </fieldset>
+    <fieldset></fieldset>
+    
+  <input type="submit"  (click)="updateformateur1()"value="modifier" />
+
+    </form>
+    </div>

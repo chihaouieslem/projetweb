@@ -1,0 +1,34 @@
+
+<a (click)="reloadPage()"> 
+  <img src="assets/act.png" style="width: 60px;height: 60px;transform: translate(5px);"/> 
+</a>
+
+
+<a routerLink="/add" routerLinkActive="active" >  
+  <img src="assets/ajouterf.png" 
+  style="width:60px;height: 60px;transform: translate(20px);"/> </a>
+
+<table style="transform: translate(100px);">
+  <thead>
+    <tr>
+      <th style="text-align: center; font-size: 25px;">Listes des formateurs</th>
+     
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor = "let formateur of formateurs">
+      <td data-column="First Name" >  <b style="color:#008080;">Identifiant:</b>  {{formateur.id}}<b style="color:#008080;"> Nom et Prénom: </b>  {{formateur.nomprenom}} <b style="color:#27B1A3;">
+        Email:</b> {{formateur.email}} <b style="color:#27B1A3;"> Adresse: </b > {{formateur.adresse}} 
+          <b style="color:#27B1A3;">Domaine: </b> {{formateur.domaine}} 
+        <a routerLink='/formateurs' ActivateLink='True' (click)="supprimerformateur(formateur)"> <img src="assets/delete.png" style="width: 55px;height: 55px;transform: translate(60px) ;"/> </a>
+        <a [routerLink]="['/update', formateur.id]" routerLinkActive="active"> <img src="assets/modif.png" style="width: 50px;height: 50px;transform: translate(-43px);"/> </a>
+      </td>
+   
+      
+    </tr>
+   
+  
+  </tbody>
+</table>
+<router-outlet></router-outlet>
+

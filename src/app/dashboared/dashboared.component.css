@@ -1,0 +1,158 @@
+@import "~bootstrap/dist/css/bootstrap.css" ;
+.wrapper .main_content{
+    width: 100%;
+    margin-left: 270px;
+   
+  }
+  
+  .wrapper .main_content .header{
+    padding: 20px;
+    background: #fff;
+    color: #717171;
+    border-bottom: 1px solid #e0e4e8;
+  }
+  
+  .wrapper .main_content .info{
+    margin: 20px;
+    color: #717171;
+    line-height: 25px;
+  }
+  
+  .wrapper .main_content .info div{
+    margin-bottom: 20px;
+  }
+  .imgdash
+  {
+    width: 150px;
+
+    background-position: left;
+  }
+  .rectangle1 {
+    width: 330px;
+    height: 200px;
+    border-radius: 4px;
+ 
+    background-color:green;
+    text-align: center;
+    margin-right: 12px;
+  }
+  .rectangle2 {
+    width: 330px;
+    height: 200px;
+    border-radius: 4px;
+ 
+    background-color:rgb(221, 131, 14);
+    text-align: center;
+    margin-right: 12px;
+  }
+  .rectangle3 {
+    width: 330px;
+    height: 200px;
+    border-radius: 4px;
+    margin-right: 12px;
+    background-color:rgb(155, 14, 221);
+    text-align: center;
+  }
+  .roundedImage{
+    overflow:hidden;
+    -webkit-border-radius:400px;
+    -moz-border-radius:400px;
+    border-radius:400px;
+    width: 170px;
+    height:160px;
+  transform: translate(-9px,10px);
+
+}
+.overviewcard {
+  
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #d3d3;
+}
+.newtable
+{	width: 300px !important;
+  border-collapse: collapse!important; 
+  transform: translate(700px,-250px);
+}
+table { 
+  width: 600px !important;
+	border-collapse: collapse; 
+ transform: translate(40px,20px);
+	}
+  
+  /* Zebra striping */
+  tr:nth-of-type(odd) { 
+	background:   #D4E7F3 ; 
+	}
+  
+  th { 
+	background: #54AEE7 ; 
+	color: white; 
+	  font-weight: bold; 
+	  text-align: center;
+	}
+  
+  td, th { 
+	padding: 10px; 
+	border: 1px solid #ccc; 
+	text-align: left; 
+	font-size: 18px;
+	}
+  
+  /* 
+  Max width before this PARTICULAR table gets nasty
+  This query will take effect for any screen smaller than 760px
+  and also iPads specifically.
+  */
+  @media 
+  only screen and (max-width: 760px),
+  (min-device-width: 768px) and (max-device-width: 1024px)  {
+  
+	table { 
+		width: 100%; 
+	}
+  
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr { 
+		  display: block; 
+		  background-color: white;
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr { 
+	  position: absolute;
+	  top: -9999px;
+	  left: -9999px;
+	}
+	
+	tr { border: 1px solid #ccc; }
+	
+	td { 
+	  /* Behave  like a "row" */
+	  border: none;
+	  border-bottom: 1px solid #eee; 
+	  position: relative;
+	  padding-left: 50%; 
+	}
+  
+	td:before { 
+	  /* Now like a table header */
+	  position: absolute;
+	  /* Top/left values mimic padding */
+	  top: 6px;
+	  left: 6px;
+	  width: 45%; 
+	  padding-right: 10px; 
+	  white-space: nowrap;
+	  /* Label the data */
+	  content: attr(data-column);
+  
+	  color: #000;
+	  font-weight: bold;
+	  }
+   
+  
+  }
+
+
